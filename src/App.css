@@ -1,8 +1,13 @@
 body {
-    background-color: grey;
+  /* background-color: rgb(245, 245, 245); */
 }
 .App {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+@media screen and (min-width: 900px) {
+  .App {
+    width: 75%;
+  }
 }
