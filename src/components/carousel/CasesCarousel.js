@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./CasesCarousel.css";
 import Grid from "@mui/system/Unstable_Grid";
+import CaseCollection from "../CaseCollection/CaseCollection";
 
 const CasesCarousel = () => {
   const casesData = [
@@ -59,7 +60,8 @@ const CasesCarousel = () => {
           <div key={index}>
             <Grid container spacing={2}>
               <Grid xs={12} md={7}>
-                <img src={cas.img1} alt="{item.title}" />
+                {/* <img src={cas.img1} alt="{item.title}" /> */}
+                <CaseCollection />
               </Grid>
               <Grid xs={12} md={5}>
                 <h3 className="caseTitle">

@@ -29,3 +29,9 @@
   font-weight: 500;
   margin-top: 2.5rem;
 }
+
+@media screen and (min-width: 900px) {
+  .caseTitle {
+    margin-top: 10%;
+  }
+}

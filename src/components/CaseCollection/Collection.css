@@ -1,0 +1,44 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-top: 40px;
+}
+
+.collection {
+  max-width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+img:hover {
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.collection img {
+  object-fit: cover;
+}
+
+.collectionBig {
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.collectionBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collectionMini {
+  width: 31%;
+  height: 120px;
+  border-radius: 20px;
+}
