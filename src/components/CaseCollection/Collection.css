@@ -3,7 +3,7 @@
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  margin-top: 40px;
+  padding: 10px;
 }
 
 .collection {
@@ -11,7 +11,8 @@
   background-color: #fff;
   padding: 30px;
   border-radius: 30px;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
+  /* box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6)); */
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
@@ -26,7 +27,7 @@ img:hover {
 }
 
 .collectionBig {
-  height: 400px;
+  height: 350px;
   width: 100%;
   border-radius: 20px;
   margin-bottom: 15px;
@@ -41,4 +42,10 @@ img:hover {
   width: 31%;
   height: 120px;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .content {
+    margin-top: 40px;
+  }
 }

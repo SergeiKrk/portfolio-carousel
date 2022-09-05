@@ -54,16 +54,22 @@ const CasesCarousel = () => {
 
   return (
     <>
-      <h2>Примеры наших квиз-лендингов</h2>
+      <h2 className="center">Примеры наших квиз-лендингов</h2>
       <Slider {...settings}>
         {casesData.map((cas, index) => (
           <div key={index}>
-            <Grid container spacing={2}>
+            <Grid
+              container
+              spacing={2}
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+            >
               <Grid xs={12} md={7}>
                 {/* <img src={cas.img1} alt="{item.title}" /> */}
                 <CaseCollection />
               </Grid>
-              <Grid xs={12} md={5}>
+              <Grid xs={12} md={5} justifyContent="center">
                 <h3 className="caseTitle">
                   {cas.title} ({cas.link})
                 </h3>
