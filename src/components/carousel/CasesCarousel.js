@@ -16,8 +16,12 @@ const CasesCarousel = () => {
       conversion: "6",
       leadPrice: "480",
       link: "higina-home.com",
-      img1:
-        "https://quiz.paradigma.website/wp-content/uploads/2022/06/46888.jpeg",
+      image: [{
+        img1: "https://quiz.paradigma.website/wp-content/uploads/2022/06/46888.jpeg",
+        img2: "https://quiz.paradigma.website/wp-content/uploads/2022/06/46888.jpeg",
+        img3: "https://quiz.paradigma.website/wp-content/uploads/2022/06/46888.jpeg",
+        img4: "https://quiz.paradigma.website/wp-content/uploads/2022/06/46888.jpeg",
+      }]  
     },
     {
       id: 1,
@@ -27,8 +31,12 @@ const CasesCarousel = () => {
       conversion: "9",
       leadPrice: "380",
       link: "склад-септиков.рф",
-      img1:
-        "https://quiz.paradigma.website/wp-content/uploads/2022/06/466464646464646.jpeg",
+      image: [{
+        img1: "https://quiz.paradigma.website/wp-content/uploads/2022/06/466464646464646.jpeg",
+        img2: "https://quiz.paradigma.website/wp-content/uploads/2022/06/466464646464646.jpeg",
+        img3: "https://quiz.paradigma.website/wp-content/uploads/2022/06/466464646464646.jpeg",
+        img4: "https://quiz.paradigma.website/wp-content/uploads/2022/06/466464646464646.jpeg",
+      }]
     },
     {
       id: 2,
@@ -38,8 +46,12 @@ const CasesCarousel = () => {
       conversion: "10",
       leadPrice: "800",
       link: "kitchen4u.ru",
-      img1:
-        "https://quiz.paradigma.website/wp-content/uploads/2022/03/quiz11-1122.jpg",
+      images: [{
+        img1: "https://quiz.paradigma.website/wp-content/uploads/2022/03/quiz11-1122.jpeg",
+        img2: "https://quiz.paradigma.website/wp-content/uploads/2022/03/quiz11-1122.jpeg",
+        img3: "https://quiz.paradigma.website/wp-content/uploads/2022/03/quiz11-1122.jpeg",
+        img4: "https://quiz.paradigma.website/wp-content/uploads/2022/03/quiz11-1122.jpeg",
+      }]
     },
   ];
 
@@ -66,8 +78,7 @@ const CasesCarousel = () => {
               alignItems="center"
             >
               <Grid xs={12} md={7}>
-                {/* <img src={cas.img1} alt="{item.title}" /> */}
-                <CaseCollection />
+                <CaseCollection images={cas.images} />
               </Grid>
               <Grid xs={12} md={5} justifyContent="center">
                 <h3 className="caseTitle">
