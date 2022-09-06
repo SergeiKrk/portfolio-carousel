@@ -16,12 +16,14 @@ const CasesCarousel = () => {
       conversion: "6",
       leadPrice: "480",
       link: "higina-home.com",
-      image: [{
-        img1: "https://quiz.paradigma.website/wp-content/uploads/2022/06/46888.jpeg",
-        img2: "https://quiz.paradigma.website/wp-content/uploads/2022/06/46888.jpeg",
-        img3: "https://quiz.paradigma.website/wp-content/uploads/2022/06/46888.jpeg",
-        img4: "https://quiz.paradigma.website/wp-content/uploads/2022/06/46888.jpeg",
-      }]  
+      img1:
+        "https://higina-home.com/wp-content/uploads/2022/05/be56bdcfde42e850420a57942f135c63.jpg",
+      img2:
+        "https://higina-home.com/wp-content/uploads/2022/05/ef3f609d4ca36499a23d775c4ac0a637.jpg",
+      img3:
+        "https://higina-home.com/wp-content/uploads/2022/05/cadd298f3846fc3055a6d1a1f682c32b.jpg",
+      img4:
+        "https://higina-home.com/wp-content/uploads/2022/05/be56bdcfde42e850420a57942f135c63.jpg",
     },
     {
       id: 1,
@@ -31,12 +33,14 @@ const CasesCarousel = () => {
       conversion: "9",
       leadPrice: "380",
       link: "склад-септиков.рф",
-      image: [{
-        img1: "https://quiz.paradigma.website/wp-content/uploads/2022/06/466464646464646.jpeg",
-        img2: "https://quiz.paradigma.website/wp-content/uploads/2022/06/466464646464646.jpeg",
-        img3: "https://quiz.paradigma.website/wp-content/uploads/2022/06/466464646464646.jpeg",
-        img4: "https://quiz.paradigma.website/wp-content/uploads/2022/06/466464646464646.jpeg",
-      }]
+      img1:
+        "https://керамоподбор.рф/wp-content/uploads/2021/12/IMG-20191007-WA0003.jpg",
+      img2:
+        "https://керамоподбор.рф/wp-content/uploads/2021/12/IMG-20211228-WA0011.jpg",
+      img3:
+        "https://керамоподбор.рф/wp-content/uploads/2021/12/IMG-20191007-WA0004.jpg",
+      img4:
+        "https://керамоподбор.рф/wp-content/uploads/2022/01/IMG-20191007-WA0005.jpg",
     },
     {
       id: 2,
@@ -46,12 +50,10 @@ const CasesCarousel = () => {
       conversion: "10",
       leadPrice: "800",
       link: "kitchen4u.ru",
-      images: [{
-        img1: "https://quiz.paradigma.website/wp-content/uploads/2022/03/quiz11-1122.jpeg",
-        img2: "https://quiz.paradigma.website/wp-content/uploads/2022/03/quiz11-1122.jpeg",
-        img3: "https://quiz.paradigma.website/wp-content/uploads/2022/03/quiz11-1122.jpeg",
-        img4: "https://quiz.paradigma.website/wp-content/uploads/2022/03/quiz11-1122.jpeg",
-      }]
+      img1: "https://jpimport.ru/wp-content/uploads/2021/11/3.jpg",
+      img2: "https://jpimport.ru/wp-content/uploads/2021/11/2.jpg",
+      img3: "https://jpimport.ru/wp-content/uploads/2021/11/3.jpg",
+      img4: "https://jpimport.ru/wp-content/uploads/2021/11/5.jpg",
     },
   ];
 
@@ -78,7 +80,12 @@ const CasesCarousel = () => {
               alignItems="center"
             >
               <Grid xs={12} md={7}>
-                <CaseCollection images={cas.images} />
+                <CaseCollection
+                  img1={cas.img1}
+                  img2={cas.img2}
+                  img3={cas.img3}
+                  img4={cas.img4}
+                />
               </Grid>
               <Grid xs={12} md={5} justifyContent="center">
                 <h3 className="caseTitle">
@@ -94,7 +101,7 @@ const CasesCarousel = () => {
                   </Grid>
                   <Grid xs={6} md={3}>
                     <p>Цена лида:</p>
-                    <p className="caseParam">{cas.leadPrice} руб.</p>
+                    <p className="caseParam">{cas.leadPrice} р.</p>
                   </Grid>
                 </Grid>
               </Grid>
