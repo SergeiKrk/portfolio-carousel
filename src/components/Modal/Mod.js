@@ -47,7 +47,7 @@ function Mod() {
   };
 
   return (
-    <div className="wrModer">
+    <>
       {data.data.map((item, index) => (
         <div key={index} className="wrModer-images">
           <img
@@ -68,7 +68,7 @@ function Mod() {
           />
         )}
       </div>
-    </div>
+    </>
   );
 }
 

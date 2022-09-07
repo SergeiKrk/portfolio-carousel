@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <CasesCarousel />
-      <Mod />
+      {/* <Mod /> */}
     </div>
   );
 }
