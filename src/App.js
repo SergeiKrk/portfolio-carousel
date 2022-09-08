@@ -85,15 +85,15 @@ function App() {
                       />
                       {console.log(data.casesData.image)}
                       <div className="collectionBottom">
-                        {data.casesData.map((item, index) => (
+                        {/* {data.casesData.map((item, index) => (
                           <img
                             key={index}
                             className="collectionMini"
-                            src={item.image[0].link}
-                            alt={item.image[0].alt}
+                            src={item.image.link}
+                            alt={item.image.alt}
                             onClick={() => handleClick(item, index)}
                           />
-                        ))}
+                        ))} */}
                       </div>
                     </div>
                   </div>
