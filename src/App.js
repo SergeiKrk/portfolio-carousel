@@ -82,18 +82,18 @@ function App() {
                         className="collectionBig"
                         src={cas.image[0].link}
                         alt={cas.image[0].alt}
+                        onClick={() => handleClick(cas, index)}
                       />
-                      {console.log(data.casesData.image)}
                       <div className="collectionBottom">
-                        {/* {data.casesData.map((item, index) => (
+                        {cas.image.map((item, index) => (
                           <img
                             key={index}
                             className="collectionMini"
-                            src={item.image.link}
-                            alt={item.image.alt}
+                            src={item.link}
+                            alt={item.alt}
                             onClick={() => handleClick(item, index)}
                           />
-                        ))} */}
+                        ))}
                       </div>
                     </div>
                   </div>
