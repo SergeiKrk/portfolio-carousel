@@ -19,16 +19,16 @@ function App() {
   };
 
   const handelRotationRight = () => {
-    const totalLength = data.images.length;
+    const totalLength = data.casesData[0].image.length;
     if (currentIndex + 1 >= totalLength) {
       setCurrentIndex(0);
-      const newUrl = data.images[0].link;
+      const newUrl = data.casesData[0].image[0].link;
       setClickedImg(newUrl);
       return;
     }
     const newIndex = currentIndex + 1;
-    const newUrl = data.images.filter((item) => {
-      return data.images.indexOf(item) === newIndex;
+    const newUrl = data.casesData[0].image.filter((item) => {
+      return data.casesData[0].image.indexOf(item) === newIndex;
     });
     const newItem = newUrl[0].link;
     setClickedImg(newItem);
