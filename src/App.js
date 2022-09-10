@@ -17,6 +17,11 @@ function App() {
     setCurrentIndex(index);
     setClickedImg(item.link);
   };
+  const handleBigImgClick = (cas, index) => {
+    let item = cas.image[0];
+    setCurrentIndex(index);
+    setClickedImg(item.link);
+  };
 
   const handelRotationRight = () => {
     const totalLength = data.casesData[0].image.length;
@@ -36,16 +41,16 @@ function App() {
   };
 
   const handelRotationLeft = () => {
-    const totalLength = data.images.length;
+    const totalLength = data.casesData[0].image.length;
     if (currentIndex === 0) {
       setCurrentIndex(totalLength - 1);
-      const newUrl = data.images[totalLength - 1].link;
+      const newUrl = data.casesData[0].image[totalLength - 1].link;
       setClickedImg(newUrl);
       return;
     }
     const newIndex = currentIndex - 1;
-    const newUrl = data.images.filter((item) => {
-      return data.images.indexOf(item) === newIndex;
+    const newUrl = data.casesData[0].image.filter((item) => {
+      return data.casesData[0].image.indexOf(item) === newIndex;
     });
     const newItem = newUrl[0].link;
     setClickedImg(newItem);
@@ -82,7 +87,7 @@ function App() {
                         className="collectionBig"
                         src={cas.image[0].link}
                         alt={cas.image[0].alt}
-                        onClick={() => handleClick(cas, index)}
+                        onClick={() => handleBigImgClick(cas, index)}
                       />
                       <div className="collectionBottom">
                         {cas.image.map((item, index) => (
