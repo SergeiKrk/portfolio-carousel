@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Grid from "@mui/system/Unstable_Grid";
 import Modal from "./Modal";
 import "./mod.css";
-import "../CaseCollection/Collection.css";
+import "../caseCollection/Collection.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
